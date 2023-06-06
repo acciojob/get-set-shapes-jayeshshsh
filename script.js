@@ -1,21 +1,10 @@
-//complete this code
-class Rectangle {}
-constructor(width,height){
-	this.width = width;
-	this.height = height;
-}
-get width(){
-	return this.width;
-}
+const rect = new Rectangle(5, 10);
+console.log(rect.width); // output: 5
+console.log(rect.height); // output: 10
+console.log(rect.getArea()); // output: 50
 
-get height(){
-	return this.height;
-}
-getArea(){
-	return this.width*this.height;
-}
-class Square extends Animal {}
-
-// Do not change the code below this line
-window.Rectangle = Rectangle;
-window.Square = Square;
+const square = new Square(7);
+console.log(square.width); // output: 7
+console.log(square.height); // output: 7
+console.log(square.getArea()); // output: 49
+console.log(square.getPerimeter()); // output: 28
